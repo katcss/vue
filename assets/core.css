@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Heebo;
+    src: url('./fonts/Heebo.ttf')
+}
+:root {
+    --katui-primary: 0,122,255;
+    --katui-red: 249,59,58;
+    --katui-orange: 255,149,9;
+    --katui-yellow: 255,201,0;
+    --katui-green: 52,199,89;
+    --katui-teal: 51,202,194;
+    --katui-blue: 0,122,255;
+    --katui-indigo: 88,86,214;
+    --katui-purple: 175,82,222;
+    --katui-pink: 223,45,152;
+
+
+    --katui-gray-1: #F1F1F2;
+    --katui-gray-2: #E5E5E5;
+    --katui-gray-3: #D8D8D8;
+    --katui-gray-4: #BFBFBF;
+    --katui-gray-5: #A9A9A9;
+    --katui-gray-6: #8A8A8A;
+    --katui-gray-7: #575757;
+    --katui-gray-8: #282828;
+}
+
+html {
+    font-family:'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #636366
+}
+
+.katui_button *, .katui_input * {
+    @apply transition-all duration-75 ease-in-out
+}
