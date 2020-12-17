@@ -30,16 +30,16 @@ export default {
         styles() {
             let border = 'gray-1'
             let focus = 'border-blue'
-            let background = 'gray-1 focus:bg-white'
+            let background = 'gray-1'
             switch (this.state) {
                 case 'success':
-                    border = 'green'
+                    border = 'green-accent'
                     break;
                 case 'warning':
-                    border = 'orange'
+                    border = 'orange-accent'
                     break;
                 case 'error':
-                    border = 'red'
+                    border = 'red-accent'
                     break;
                 default:
                     break;
@@ -121,10 +121,13 @@ export default {
     @apply rounded-md border-2 box-border w-full flex overflow-hidden
 }
 .katui_input__main:focus-within {
+    @apply bg-white
+}
+.katui_input__main:focus-within {
     @apply border-primary
 }
 .katui_input__field {
-    @apply px-2 rounded-md flex-grow outline-none h-8 text-gray-8
+    @apply px-2 flex-grow outline-none self-center h-9 rounded text-gray-8
 }
 .katui_input__messages {
     @apply text-left px-2 h-6 text-sm

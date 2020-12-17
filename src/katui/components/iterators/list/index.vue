@@ -34,7 +34,6 @@ export default {
 /** 
 }**/
 .katui_list {
-    @apply px-3
 }
 .katui_list__title {
     @apply text-gray

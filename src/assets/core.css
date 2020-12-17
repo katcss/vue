@@ -22,10 +22,12 @@
     --katui-gray-5: #A9A9A9;
     --katui-gray-6: #8A8A8A;
     --katui-gray-7: #575757;
-    --katui-gray-8: #282828;
+    --katui-gray-8:#2d2d2d;
+    --katui-gray-9: #282828;
 }
 
 html {
+    height: 100%;
     font-family:'Segoe UI',
     Roboto,
     Helvetica,
@@ -37,7 +39,9 @@ html {
     -moz-osx-font-smoothing: grayscale;
     color: #636366
 }
-
+a {
+    @apply text-primary
+}
 .katui_button *, .katui_input * {
     @apply transition-all duration-75 ease-in-out
 }

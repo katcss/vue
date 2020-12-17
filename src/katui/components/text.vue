@@ -37,32 +37,39 @@ export default {
         light: {
             type: Boolean,
             default: false
+        },
+        dark: {
+            type: Boolean,
+            default: false
         }
     },
     computed: {
         styles () {
             let textSize = 'base'
-            let textColor = 'gray'
+            let textColor = this.dark? 'white' : 'gray'
             let fontWeight = 'normal'
-
+            let lineHeight = ''
 
             if (this.heading) {
                 textSize = '5xl'
+                lineHeight = 'loose'
             }
             if (this.subheading) {
                 textSize = '4xl'
+                lineHeight = 'loose'
             }
             if (this.title) {
                 textSize = '2xl'
+                lineHeight = 'relaxed'
             }
             if (this.important) {
-                textColor = 'black'
+                textColor = this.dark? 'white' : 'black'
             }
             if (this.second) {
-                textColor = 'gray-6'
+                textColor = this.dark? 'gray-4' : 'gray-6'
             }
             if (this.last) {
-                textColor = 'gray-3'
+                textColor = this.dark? 'gray-5' : 'gray-3'
             }
             if (this.bold) {
                 fontWeight = 'bold'
@@ -70,7 +77,7 @@ export default {
             if (this.light) {
                 fontWeight = 'light'
             }
-            return [`text-${textSize}`, `text-${textColor}`, `font-${fontWeight}`]
+            return [`text-${textSize}`, `text-${textColor}`, `font-${fontWeight}`, `leading-${lineHeight}`]
         }
     }
 }
@@ -78,6 +85,6 @@ export default {
 
 <style>
 .katui_text {
-    @apply flex
+    @apply inline
 }
 </style>

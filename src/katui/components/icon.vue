@@ -37,7 +37,7 @@ export default {
 
 <style>
 .katui_icon {
-    @apply flex items-center;
+    @apply inline-flex items-center;
     font-size: inherit;
     color: inherit;
 }

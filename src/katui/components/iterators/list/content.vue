@@ -24,6 +24,9 @@ export default {
 .katui_list__item_content.singleline {
     @apply flex
 }
+.katui_list__item_content > * {
+    @apply block
+}
 .katui_list__item_content.singleline .katui_text:nth-child(2n)::before {
     content: '—';
     @apply inline-block mx-2

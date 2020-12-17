@@ -4,6 +4,7 @@ export { default as kInput } from './input';
 export { default as kIcon } from './icon';
 export { default as kAvatar } from './avatar';
 export { default as KTitle } from './text';
+export { default as KTabs } from './tabs';
 
 
 //layout

@@ -12,8 +12,11 @@ export default {
 
 <style>
 .katui_list__item {
-    @apply flex items-center cursor-pointer overflow-hidden rounded;
+    @apply flex items-center cursor-pointer overflow-hidden;
     user-select: none
+}
+.katui_list__item:nth-of-type(odd) {
+    @apply bg-gray-1
 }
 .katui_list__item:hover {
     @apply bg-accent text-primary

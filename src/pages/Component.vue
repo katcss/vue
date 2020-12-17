@@ -1,5 +1,5 @@
 <template>
-  <k-container class="h-screen">
+  <k-container class="min-h-screen">
         <k-appbar>
             <k-text title important>{{$route.meta.name}}</k-text>
         </k-appbar>
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 
 export default {
     name: 'components',
@@ -18,5 +19,13 @@ export default {
 </script>
 
 <style>
-
+.token.tag, .token.attr-name, .token.namespace, .token.deleted{
+    color: #fe6569
+}
+.attr-name {
+    color: #FF9800 !important
+}
+.language-html {
+    @apply rounded-md bg-gray-8
+}
 </style>
